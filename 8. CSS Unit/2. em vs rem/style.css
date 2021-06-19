@@ -1,0 +1,103 @@
+/* em VS rem
+
+-> em?
+    > karena karakter "M", em ini dulunya adalah sebuah satuan dimana kita mengukur panjang dari ukuran huruf "M"/typografi untuk horizontal lebar dari huruf "M"-nya.
+    > semakin kesini mengalami pergeseran karena banyak font yang tidak memiliki huruf "M", contohnya karakter-karakter chinese, japan, korea, dsb.
+    > jadi em itu diubah lagi istilah menjadi dari tinggi font bukan lagi lebar dari huruf "M".
+    > lalu digunakan juga untuk css fungsinya mengatur ukuran tidak hanya font, tetapi margin, dan padding yang berada di sekitar element.
+
+FYI
+> ukuran default em diberi 16px bila tidak terdapat font-size sebagai element parentnya.
+> perilaku em cascading atau menumpuk
+> untuk mengatasinya menggunakan rem
+
+TIPS
+> gunakan rem untuk font
+> kalo em, bisa digunakan untuk menentukan length sebuah element bisa margin, padding, height, widht.
+*/
+
+/* Implementasi */
+/* html {
+    font-size: 10px;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    text-align: center;
+    background-color: #eee;
+    line-height: 1.6;
+    font-weight: 300;
+    min-height: 2000px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.typography {
+    display: flex;
+}
+
+.typography .col {
+    flex: 1;
+    margin: 0 0.5em;
+    padding: 0 0.5em;
+}
+
+
+
+/* em */
+/* .typography {
+    font-size: 10px;
+}
+
+.col-em {
+    font-size: 2em; 
+}
+
+.col-em h2 {
+    font-size: 2em;
+}
+
+.col-em p {
+    font-size: 1.5em;
+} */
+
+
+
+/* rem */
+/* .col-rem {
+    font-size: 10px;
+}
+
+.col-rem h2 {
+    font-size: 2rem;
+}
+
+.col-rem p {
+    font-size: 1.5rem;
+} */
+
+
+
+/* Contoh kasus */
+.btn {
+    display: inline-block;
+    background: #333;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em 3em;
+    margin: 0 1.5em; /* > kalo mau ukurannya fix ganti menjadi rem */
+}
+
+.btn-sm {
+    font-size: 0.5em;
+}
+
+.btn-lg {
+    font-size: 2em;
+}

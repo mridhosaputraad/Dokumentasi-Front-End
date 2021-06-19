@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juragan Angkot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='container' id='container'>
+    <h1>Juragan Angkot</h1>
+    <hr>
+    <p>Kami menyediakan 10 Angkot, silahkan cek kondisi angkot berdasarkan no angkot (1-10). </p>
+    <form>
+        <input id='angkotKita' type='number' placeholder='Masukkan No Angkot'/>
+        <button type='button' onclick='cekKondisi()'>Cek Kondisi</button>
+    </form>
+    
+    <div id='hasil'></div>
+        <button id='keterangan' type='button' onclick='allAngkot()'>Lihat kondisi seluruh angkot</button>
+        <button id='tutup' type='button' onclick='tutupKet()'>Tutup</button>
+
+        <div id='semuaAngkot'></div>
+    </div> 
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,103 @@
+/* CSS Value & Unit
+
+-> Contoh sederhananya
+    .selector {
+        width: 80%;         > Angka 80 dan 500 disebut value
+        height: 500px;      > % dan px disebut unit
+        font-size: 2em;
+        opacity: 0.5;
+        transform: rotate(30deg);
+        box-shadow: 0 0 10px rgba(0,0,0,.7);
+        position: absolute;
+        z-index: -9999;
+    }
+
+-> CSS Value
+    > integer
+        Angka atau bilangan bulat (positif/negatif) saja.
+            z-index: 1;
+            z-index: -9999;
+            order: 3;
+            grid-column-start: 2;
+            grid-row-end: -4;
+            ...
+
+    > number
+        Angka tapi bisa bilangan pecahan dan desimal.
+            opacity: 0.8;
+            transform: scale(2.5);
+            ...
+
+    > percentage
+        merepresentasikan sebagian dari nilai tertentu. Dan % selalu relative terhadap nilai yang lain.
+            width: 50%;         > analoginya, 50% ini akan selalu bernilai setengah dari ukuran window atau bisa juga terhadap element pembungkusnya
+            height: 100px;
+            ...
+
+    > dimension
+        Nilai yang digabungkan dengan satuan. Atau bisa juga number boleh bulat maupun pecahan yang memiliki satuan di belakangnya. didalam dimension dibagi lagi menjadi beberapa kategori:
+            > length
+                > Absolute (ukurannya sudah fix atau pasti)
+                > Relative 
+
+            > angle (sudut)
+                > deg (derajat)
+                    transform: rotate(30deg);
+                > rad (radiant)
+                    transform: rotate(0.523333333rad);
+                > grad (gradiant)
+                    transform: rotate(33.3grad);
+                > turn (untuk menentukan berapa putaran)
+                    transform: rotate(0.083333333turn);
+
+            > time (biasanya untuk animasi)
+                > s (detik)
+                    transition: .3s;
+                > ms (milisecond)
+                    transition: 300ms;
+
+            > resolution (menuntukan resolusi dari tampilan web)
+                > dpi (dot per inch) kenapa dot? tujuannya untuk design printing.
+                    @media print and (min-resolustion: 300dpi) {
+                        ...
+                    }
+                > dpcm
+                > dppx
+*/
+
+/* Contoh kasus penerapan unit em - relatif terhadap ukuran font yang sedang digunakan */
+.box {
+    font-size: 30px; /* > Ini menjadi ukuran dasar dari em */
+}
+
+.box h1 {
+    font-size: 1em;
+}
+
+.box p {
+    font-size: 2em;
+}
+
+
+/* Contoh kasus penerapan unit rem - relatif terhadap ukuran font "root" / <html> */
+html {
+    font-size: 50px; /* > Ini "root" */
+}
+
+.kotak {
+    font-size: 30px; /* > secara sistem ini di lewati dan langsung baca rootnya */
+}
+
+.kotak h1 {
+    font-size: 1rem;
+}
+
+.kotak p {
+    font-size: 2rem;
+}
+
+
+/* Contoh kasus penerapan unit ch - relatif terhadap lebar karakter '0' dari font yang sedang digunakan */
+.kotak1 {
+    width: 60ch;
+}

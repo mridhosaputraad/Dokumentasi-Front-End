@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "Muhammad",
+        "nim": "06031281823023",
+        "email": "muhammadridho0773@gmail.com",
+        "jurusan": "Pendidikan Ekonomi",
+        "idDosenWali": 1
+    },
+    {
+        "nama": "Ridho",
+        "nim": "12345678900001",
+        "email": "ridho@default.id",
+        "jurusan": "Pendidikan Ekonomi",
+        "idDosenWali": 2
+    },
+    {
+        "nama": "Arif",
+        "nim": "12345678900002",
+        "email": "arif@default.id",
+        "jurusan": "Pendidikan Ekonomi",
+        "idDosenWali": 3
+    }
+]

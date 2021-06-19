@@ -1,0 +1,112 @@
+body {
+    background: #1ce;
+}
+
+.container {
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 12px;
+    height: 240px;
+    margin-bottom: 40px;
+    background: gainsboro;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 2px red;
+}
+
+.container h1 {
+    font-size: 17px;
+    text-align: center;
+    margin: -2px 0 -3px 0;
+}
+
+.container hr {
+    width: 75%;
+    border-top: 2px solid green;
+}
+
+.container p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.container form input {
+    display: block;
+    position: relative;
+    width: 85%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    border: 1px solid #666;
+}
+
+.container form input:hover,
+.container form input:focus {
+    box-shadow: 0 0 4px 1px blue;
+}
+
+.container form button {
+    display: block;
+    position: relative;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: 8px auto;
+    padding: 6px 0 6px 0;
+    text-transform: uppercase;
+    background-color: green;
+    color: #fff;
+}
+
+.container #keterangan,
+.container #tutup {
+    position: absolute;
+    width: 90%;
+    background-color: salmon;
+    padding: 3px;
+    border: 1px solid red;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px auto;
+    left: 0;
+    right: 0;
+}
+
+.container #keterangan {
+    z-index: 1;
+}
+
+.container #tutup {
+    z-index: 0;
+}
+
+#hasil {
+    color: #1a2129;
+    font-size: 14px;
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#semuaAngkot table {
+    width: 99%;
+    margin-top: 65px;
+    font-size: 14px;
+}
+
+table thead tr {
+    background-color: #1ce;
+    height: 40px;
+    text-align: center;
+}
+
+table tbody tr {
+    background-color: #666;
+    color: #fff;
+    text-align: left;
+}
